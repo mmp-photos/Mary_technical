@@ -1,0 +1,195 @@
+#root {
+    /* DEFINE COLORS FOR WEBSITE */
+    --vivid-purple: 126, 44, 207;
+    --vivid-pink: #bb2ad1;
+    --vivid-blue: 37, 35, 207;
+    --mid-teal: 118, 184, 220;
+    --mid-brown: #c6845f;
+    --deep-blue: #4818a2;
+    --deep-green: #3b688c;
+    --dark-blue: 67,89,138;
+    --muted-red: #663062;
+    --muted-purple: #893585;
+    --white: 232, 223, 244;
+    --black: 32, 22, 32;
+    --true-white: white;
+    --true-black: black;
+    --purdue-gold: 194, 142, 12;
+    --purdue-black: 55, 58, 54;
+    width:100%;
+    margin: 0;
+    margin-top: 90px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0rem;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--white);
+  /* padding-top: 6rem; */
+}
+blockquote {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  border: none;
+}
+button {
+  background: none;
+  border: none;
+}
+.btn-2 {
+  border: none;
+}
+.btn-2:hover {
+  box-shadow: rgba(var(--vivid-blue), .65) 0px 6px 6px;
+}
+.black-purdue{
+  color: rgba(var(--purdue-black), 1);
+}
+.card {
+ background: linear-gradient(to bottom, rgba(var(--white), .5), var(--true-white));
+  margin-right: 2rem;
+  border: solid 1px;
+}
+.container{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: var(--true-white);
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background-color: rgb(var(--mid-teal), 1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+  margin-right: 25px;
+}
+#education {
+  background: linear-gradient(to bottom, rgba(var(--purdue-gold), .7), rgba(var(--purdue-gold), .1));
+  padding: 3rem 0rem;
+}
+#experience h3 {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#experience ul {
+  background-color: none;
+  list-style-type: none;
+}
+h1 {
+  color: rgb(var(--white));
+  font-size: 4rem;
+}
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(var(--vivid-purple));
+  font-size: 4.5rem;
+}
+h3{
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--dark-blue);
+  font-size: 3.5rem;
+}
+.image-border {
+  border: solid, 2px, rgb(var(--dark-blue), 1);
+}
+.image-drop-shadow {
+  box-shadow: rgba(var(--vivid-purple), .6) 0px 6px 8px;
+}
+.inline-image {
+  max-width: 100%;
+}
+.intro-text {
+  font-size: 2rem;
+  text-align: left;
+  font-style: italic;
+  padding: 2rem 2rem 4rem 2rem;
+}
+.job-title {
+  font-style: italic;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.main-logo {
+  width: 12rem;
+  height: auto;
+  align-self: center;
+  margin-right: 1.5rem;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background-color: rgb(var(--vivid-purple));
+    min-height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 90px;
+    padding-left: 2rem;
+}
+/* nav a{
+  text-decoration: none;
+  color: rgb(var(--true-white));
+  font-size: 1.75rem;
+}
+
+nav a:hover{
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.75rem;
+} */
+.mt-10r {
+  margin-top: 10rem;
+}
+p {
+  text-align: left;
+}
+p.purdue-head{
+  color: rgb(var(--purdue-black), 1);
+  font-size: 1.75rem;
+  font-weight: bold;
+  font-style: italic;
+}
+p.purdue-body{
+  color: rgb(var(--purdue-black), 1);
+  font-weight: normal;
+  font-style: none;
+  padding: 1rem;
+}
+.round {
+  border-radius: 50%;
+}
+.section-container {
+  min-height: 100vh;
+  padding-top: 10rem;
+}
+.textButton {
+  background-color: none;
+  font-size: 1rem;
+}
+ul.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+ul.nav-list li {
+  margin: 3rem;
+}
+.vh100 {
+  min-height: 100vh;
+}
