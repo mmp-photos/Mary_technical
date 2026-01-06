@@ -4,7 +4,8 @@ function Nav() {
 
   return (
     <nav>
-        <a href="#home"><img className="main-logo" onClick={() => scrollToSection("intro")} src="public/images/mk_logo_reverse.png" alt="Mark Karty Logo - a cursive M with a sans K"/></a> <h1>Mary Karty</h1>
+        <a href="#home"><img className="main-logo" onClick={() => scrollToSection("intro")} src="public/images/mk_logo_reverse.png" alt="Mary Beth Karty Logo - a cursive M with a sans K"/></a>
+        <h1>Mary Beth Karty</h1>
         <ul className="nav-list">
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>

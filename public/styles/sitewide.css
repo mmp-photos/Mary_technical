@@ -51,9 +51,15 @@ button {
   color: rgba(var(--purdue-black), 1);
 }
 .card {
- background: linear-gradient(to bottom, rgba(var(--white), .5), var(--true-white));
+  background: linear-gradient(to bottom, rgba(var(--white), .5), var(--true-white));
+  box-shadow: rgba(var(--vivid-blue), .25) 0px 6px 6px;
   margin-right: 2rem;
-  border: solid 1px;
+  margin-bottom: 2rem;
+  border: solid .25px;
+  border-color: rgb(var(--vivid-purple), 1);
+}
+.center{
+  text-align: center;
 }
 .container{
   margin: 0px;
@@ -88,6 +94,11 @@ button {
   background-color: none;
   list-style-type: none;
 }
+footer{
+  min-height: 6rem;
+  background-color: rgb(var(--mid-teal), 1);
+  padding: 2rem;
+}
 h1 {
   color: rgb(var(--white));
   font-size: 4rem;
@@ -99,8 +110,8 @@ h2{
 }
 h3{
   font-family: 'Times New Roman', Times, serif;
-  color: var(--dark-blue);
-  font-size: 3.5rem;
+  color: rgb(var(--mid-teal), 1);
+  font-size: 2.5rem;
 }
 .image-border {
   border: solid, 2px, rgb(var(--dark-blue), 1);
@@ -136,26 +147,25 @@ nav{
     display: flex;
     width: 100%;
     background-color: rgb(var(--vivid-purple));
-    min-height: 90px;
     position: fixed;
     top: 0;
-    width: 100%;
-    margin-bottom: 90px;
-    padding-left: 2rem;
+    padding-left: 3rem;
 }
-/* nav a{
-  text-decoration: none;
-  color: rgb(var(--true-white));
-  font-size: 1.75rem;
+.nav-list a{
+text-decoration: none;
+  color: var(--true-white);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
 }
-
-nav a:hover{
+.nav-list a:hover{
   text-decoration: none;
-  color: var(--white);
-  font-size: 1.75rem;
-} */
+  color: rgba(var(--mid-teal));
+}
 .mt-10r {
   margin-top: 10rem;
+}
+#portfolio{
+  background-color: none;
 }
 p {
   text-align: left;
@@ -179,6 +189,9 @@ p.purdue-body{
   min-height: 100vh;
   padding-top: 10rem;
 }
+size3{
+  font-size: 3rem;
+}
 .textButton {
   background-color: none;
   font-size: 1rem;
@@ -192,4 +205,7 @@ ul.nav-list li {
 }
 .vh100 {
   min-height: 100vh;
+}
+.white{
+  color: var(--true-white);
 }
