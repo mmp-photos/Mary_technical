@@ -19,9 +19,9 @@ function App() {
       {Portfolio()}
       {Experience()}
       {Editing()}
+      {Nav()}
       {/* {Purdue()} */}
       {Footer()}
-      {Nav()}
     </>
   )
 }

@@ -1,3 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+/* --- FIXED NAVBAR LOGIC --- */
+
+/* Desktop only */
+@media (min-width: 768px) {
+  html{
+    font-size: 10pt;
+  }
+  .navbar-nav {
+    display: flex !important;
+    float: right !important;
+    margin: 0 !important;
+  }
+  nav.navbar {
+    position: fixed;
+    height: auto;
+    top: 0px;
+    width: 100%;
+    padding: 2rem 2rem 4rem 2rem;
+  }
+}
+
+/* Mobile only (The "Collapse" Logic) */
+@media (max-width: 767px) {
+  /* 1. Hide the menu by default */
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+
+  /* 2. Show the menu ONLY when the 'in' class is added by Bootstrap JS */
+  .navbar-collapse.collapse.in {
+    display: block !important;
+    background-color: rgb(var(--vivid-purple));
+    width: 100%;
+  }
+
+  nav.navbar {
+    position: relative !important;
+    min-height: 60px !important;
+    height: auto !important;
+    width: 100% !important;
+    padding-top: 10px;
+    display: block !important;
+  }
+
+  .navbar-nav {
+    margin: 0 !important;
+    display: block !important;
+    width: 100%;
+  }
+
+  .navbar-nav > li {
+    float: none !important;
+    display: block !important;
+    width: 100%;
+  }
+
+  /* Adjust Logo for mobile */
+  .main-logo {
+    width: 8rem !important;
+  }
+}
 #root {
     /* DEFINE COLORS FOR WEBSITE */
     --vivid-purple: 126, 44, 207;
@@ -23,17 +88,17 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  margin: 0;
-  padding: 0rem;
-  place-items: center;
-  min-height: 100vh;
-  background-color: var(--white);
-  /* padding-top: 6rem; */
+html body {
+margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.bg-teal{
+  background-color: rgba(var(--mid-teal), 1)
 }
 blockquote {
   font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-style: italic;
   border: none;
 }
@@ -53,8 +118,8 @@ button {
 .card {
   background: linear-gradient(to bottom, rgba(var(--white), .5), var(--true-white));
   box-shadow: rgba(var(--vivid-blue), .25) 0px 6px 6px;
-  margin-right: 2rem;
   margin-bottom: 2rem;
+  margin-right: 1rem;
   border: solid .25px;
   border-color: rgb(var(--vivid-purple), 1);
 }
@@ -79,11 +144,12 @@ button {
   transition: all 0.3s ease;
   position: relative;
   outline: none;
-  margin-right: 25px;
+  /* margin-right: 25px; */
 }
 #education {
-  background: linear-gradient(to bottom, rgba(var(--purdue-gold), .7), rgba(var(--purdue-gold), .1));
-  padding: 3rem 0rem;
+  background: linear-gradient(to bottom, rgba(var(--purdue-gold), .3), rgba(var(--purdue-gold), .02));
+  padding: 0rem 0rem;
+  margin-top: 20px;
 }
 #experience h3 {
   color: black;
@@ -93,6 +159,9 @@ button {
 #experience ul {
   background-color: none;
   list-style-type: none;
+}
+.flex-top {
+  justify-content: center;
 }
 footer{
   min-height: 6rem;
@@ -106,7 +175,7 @@ h1 {
 h2{
   font-family: 'Times New Roman', Times, serif;
   color: rgb(var(--vivid-purple));
-  font-size: 4.5rem;
+  font-size: 3rem;
 }
 h3{
   font-family: 'Times New Roman', Times, serif;
@@ -120,16 +189,16 @@ h3{
   box-shadow: rgba(var(--vivid-purple), .6) 0px 6px 8px;
 }
 .inline-image {
-  max-width: 100%;
+  max-width: 80%;
 }
 .intro-text {
-  font-size: 2rem;
+  font-size: 1.25rem;
   text-align: left;
   font-style: italic;
-  padding: 2rem 2rem 4rem 2rem;
 }
 .job-title {
   font-style: italic;
+  font-weight: bold;
 }
 .logo {
   height: 6em;
@@ -140,16 +209,24 @@ h3{
 .main-logo {
   width: 12rem;
   height: auto;
-  align-self: center;
-  margin-right: 1.5rem;
 }
-nav{
-    display: flex;
-    width: 100%;
-    background-color: rgb(var(--vivid-purple));
-    position: fixed;
-    top: 0;
-    padding-left: 3rem;
+.navbar-brand {
+  display: flex !important;
+  align-items: center; /* Vertically centers logo and text */
+  height: 50px;       /* Standard BS3 height */
+  padding-top: 10;     /* Remove vertical padding to let flex handle centering */
+  padding-bottom: 0;
+  white-space: nowrap; /* Prevents text from ever wrapping to a second line */
+}
+.navbar-default .navbar-toggle {
+  border-color: var(--white);
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: var(--white);
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: rgba(255,255,255,0.2);
 }
 .nav-list a{
 text-decoration: none;
@@ -160,6 +237,29 @@ text-decoration: none;
 .nav-list a:hover{
   text-decoration: none;
   color: rgba(var(--mid-teal));
+}
+.navbar-default {
+  background-color: rgb(var(--vivid-purple), 1);
+  background-image: none;
+  border-color: transparent;
+}
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #1abc9c;
+}
+.navbar-default .navbar-brand {
+  color: white;
+}
+.mr-2r{
+  margin-right: 2rem;
+}
+.mt-2r {
+  margin-top: 2rem;
+}
+.mt-5r {
+  margin-top: 5rem;
 }
 .mt-10r {
   margin-top: 10rem;
@@ -172,15 +272,24 @@ p {
 }
 p.purdue-head{
   color: rgb(var(--purdue-black), 1);
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: bold;
   font-style: italic;
+  padding-left: 3rem;
 }
 p.purdue-body{
   color: rgb(var(--purdue-black), 1);
   font-weight: normal;
   font-style: none;
-  padding: 1rem;
+  padding-left: 3.5rem;
+}
+purple-nav{
+  background-color: rgb(var(--vivid-purple));
+  position: fixed;
+  top: 0;
+}
+.pr-2r{
+  padding-right: 2rem;
 }
 .round {
   border-radius: 50%;
@@ -196,15 +305,14 @@ size3{
   background-color: none;
   font-size: 1rem;
 }
-ul.nav-list {
-  list-style-type: none;
-  display: flex;
-}
-ul.nav-list li {
-  margin: 3rem;
+ul{
+  list-style: none;
 }
 .vh100 {
   min-height: 100vh;
+}
+.w-60 {
+  width: 60%
 }
 .white{
   color: var(--true-white);

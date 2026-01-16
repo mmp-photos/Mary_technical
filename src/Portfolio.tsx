@@ -9,7 +9,7 @@ function Portfolio() {
         </div>
       </div>
       <div className="row">
-        <div className="col-md-4 col-md-offset-2 card">
+        <div className="col-md-4 col-md-offset-2 card pr-2r">
           <h3>Software Documentation</h3>
             <ul>
               <li><a target="new" href="public/images/Proactive_User_Guide.pdf">SysTrack DEX Pack User Guide</a></li>
