@@ -176,6 +176,7 @@ h2{
   font-family: 'Times New Roman', Times, serif;
   color: rgb(var(--vivid-purple));
   font-size: 3rem;
+  font-weight: bold;
 }
 h3{
   font-family: 'Times New Roman', Times, serif;

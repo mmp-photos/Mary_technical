@@ -16,11 +16,11 @@ function Experience() {
                             <li>
                                 <h3>Lakeside Software</h3>
                                 <p className="job-title">Technical Writer</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ex urna, semper at nisl at, tincidunt varius dui. Sed quis molestie dolor, vitae accumsan sapien. Suspendisse eget maximus mauris. Donec neque ante, eleifend vel diam in, sagittis tempor lorem. Morbi imperdiet ac ipsum et placerat. Nam congue tincidunt dui, a dapibus nibh cursus ac. Praesent elementum dolor tincidunt porta suscipit. Nulla tempus sem sed tempus aliquet. Proin mauris ante, feugiat et dui quis, consectetur accumsan nibh. Mauris eu erat mauris. Proin tempus imperdiet lacus non tempor. Nullam elementum tortor sit amet nulla commodo, ut sodales orci eleifend.</p>
+                                <p>Partnered with engineers, executives, and project managers to create userguides for SaS applications.  Helped UX and marketing departments determine user stories to better focus development goals.</p>
                             </li>
                             <li>
-                                <p className="job-title">Technical Writer</p>
                                 <h3>State of Indiana</h3>
+                                <p className="job-title">Technical Writer</p>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ex urna, semper at nisl at, tincidunt varius dui. Sed quis molestie dolor, vitae accumsan sapien. Suspendisse eget maximus mauris. Donec neque ante, eleifend vel diam in, sagittis tempor lorem. Morbi imperdiet ac ipsum et placerat. Nam congue tincidunt dui, a dapibus nibh cursus ac. Praesent elementum dolor tincidunt porta suscipit. Nulla tempus sem sed tempus aliquet. Proin mauris ante, feugiat et dui quis, consectetur accumsan nibh. Mauris eu erat mauris. Proin tempus imperdiet lacus non tempor. Nullam elementum tortor sit amet nulla commodo, ut sodales orci eleifend.</p>
                             </li>
                         </ul>
@@ -39,7 +39,7 @@ function Experience() {
                         <p className="purdue-body">Bachelor of Arts&mdash;English Language and Literature</p>
                         </div>
                     <div className="col-md-3">
-                        <img className="inline-image w-60" src="public/images/purdue.png" alt="Purdue University Logo" />
+                        <img className="inline-image w-60" src="images/purdue.png" alt="Purdue University Logo" />
                     </div>
                     <div className="row">
                         <div id="education" className="col-md-5 col-md-offset-3">
@@ -49,7 +49,7 @@ function Experience() {
                 </div>
                 <div className="row">
                     <div className="col-md-7 col-md-offset-2">
-                        <h2>Volunteer Experience</h2>
+                        <h2>Leadership &amp; Awards</h2>
                     </div>
                     <div className="col-md-7 col-md-offset-2">
                         <ul>

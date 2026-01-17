@@ -11,7 +11,7 @@ function About() {
         <p>Although writing is Mary Beth's craft she prefers to use her skills in positions that have a positive impact on the world.  Nothing is better than doing good. With her love of biology and life sciences and her technical experience creating user guides and documenting APIs Mary Beth is ideally suited to work with medical devices and equipment that requires approval from the FDA.</p>      
       </div>
       <div className="col-md-3 flex-top">
-        <img className="inline-image image-border image-drop-shadow mt-5r" src="public/images/Mary_mural.jpg" alt="Mary Beth in a white blouse and red head scarf looking over a table full of books" />
+        <img className="inline-image image-border image-drop-shadow mt-5r" src="images/mary_mural.jpg" alt="Mary Beth in a white blouse and red head scarf looking over a table full of books" />
 
       </div>
     </div>
