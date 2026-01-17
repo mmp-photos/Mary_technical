@@ -6,7 +6,7 @@ function Editing() {
         <h2>Science Editing and AI</h2>
       </div>
       <div className="col-md-4 col-md-offset-2">
-        <img className="inline-image image-drop-shadow mt-2r" src="public/images/ai_brain.jpg" alt="AI brain in connected nodes floating over a purple surface - Photo by Growtika - Unsplash" />      
+        <img className="inline-image image-drop-shadow mt-2r" src="images/ai_brain.jpg" alt="AI brain in connected nodes floating over a purple surface - Photo by Growtika - Unsplash" />      
       </div>
       <div className="col-md-3">
         <p>AI is a revolutionary technology that will change the world and the nature of work. It will be a powerful tool in the hands of responsible writers and editors.</p>
