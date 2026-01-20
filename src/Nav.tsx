@@ -26,8 +26,8 @@ function Nav() {
                src="/images/mk_logo_reverse.png" 
                alt="Logo" 
              />
-             <span style={{ marginLeft: '10px' }}>Mary Beth Karty</span>
           </a>
+          <span className="masthead">Mary Beth Karty</span>
         </div>
 
         {/* Collapsible Menu */}
